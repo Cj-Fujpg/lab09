@@ -1,15 +1,15 @@
 <?php
     require_once "settings.php";
-    $dbconn=@mysqli_connect($host, $username, $password, $database);
-    if ($dbconn) {
+    $dbconn = @mysqli_connect($host, $username, $password, $database);
 
+    if ($dbconn) {
         $query = "SELECT * FROM cars";
         $result = mysqli_query($dbconn, $query);
 
         if ($result) {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "Car ID: " . $row['id'] . " - Name: " . $row['name'] . "<br>";
+                    echo "Car ID: " . $row['car_id'] . " - Name: " . $row['car_name'] . "<br>";
                 }
             } else {
                 echo "<p>No cars found in the database.</p>";
@@ -19,5 +19,7 @@
         }
 
         mysqli_close($dbconn);
-    } else echo "<p>Unable to connect to the db.</p>";
+    } else {
+        echo "<p>Unable to connect to the db.</p>";
+    }
 ?>
