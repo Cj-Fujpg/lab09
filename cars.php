@@ -9,7 +9,7 @@
         if ($result) {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "Car ID: " . $row['car_id'] . " - Name: " . $row['car_name'] . "<br>";
+                    echo "Car ID: " . $row['id'] . " - Make: " . $row['make'] . "<br>";
                 }
             } else {
                 echo "<p>No cars found in the database.</p>";
