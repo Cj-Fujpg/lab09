@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "localhost";
 $password = "";
-$database = "exhibition_db.sql"; 
+$database = "exhibition_db"; 
 
 $dbconn = mysqli_connect($host, $username, $password, $database);
 
