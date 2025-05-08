@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$username = "localhost";
+$username = "root";
 $password = "";
 $database = "exhibition_db"; 
 
