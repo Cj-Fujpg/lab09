@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$username = "root";
-$password = "1234";
+$username = "";
+$password = "";
 $database = "exhibition_db"; 
 
 $dbconn = mysqli_connect($host, $username, $password, $database);
