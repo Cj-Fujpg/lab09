@@ -1,7 +1,7 @@
 <?php
     require_once "setting.php"
-    $dbconn = @mysqli_connect($host, $user, $pwd, $sql_db);
-    if ($dbconn) {
+    $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+    if ($conn) {
 
         $query = "SELECT * FROM cars";
         $result = mysqli_query($dbconn, $query);
