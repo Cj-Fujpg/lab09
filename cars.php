@@ -5,9 +5,8 @@
 
         $query = "SELECT * FROM cars";
         $result = mysqli_query($dbconn, $query);
-        if ($result){...}
-        else {...}
-        ...
+        if ($result){"It works"}
+        else {"It doesn't"}
         mysqli_close($dbconn);
     } else echo "<p>Unable to connect to the db.</p>";
 ?>
