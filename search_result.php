@@ -26,5 +26,6 @@ if (isset($_GET['model'])) {
     echo "Please enter a model to search.";
 }
 
-mysqli_close($dbconn);
+mysqli_close($db
+conn);
 ?>
